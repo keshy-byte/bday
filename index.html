@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday My Love</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow-x: hidden;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 25px;
+      padding: 40px 30px;
+      max-width: 700px;
+      width: 100%;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+      animation: fadeIn 1.5s ease;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .heart {
+      font-size: 4rem;
+      animation: pulse 1.5s infinite;
+      margin: 15px 0;
+    }
+
+    button {
+      background: white;
+      color: #ee6072;
+      border: none;
+      padding: 14px 28px;
+      border-radius: 50px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s ease;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      background: #ffe5ea;
+    }
+
+    .hidden-message {
+      margin-top: 25px;
+      display: none;
+      animation: fadeIn 1s ease;
+    }
+
+    .photo {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid white;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+
+    .floating-hearts {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .floating-hearts span {
+      position: absolute;
+      display: block;
+      color: rgba(255,255,255,0.6);
+      animation: float 10s linear infinite;
+      bottom: -150px;
+      font-size: 20px;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-1000px) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    audio {
+      margin-top: 20px;
+      width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="floating-hearts">
+    <span style="left:10%; animation-delay:0s;">❤</span>
+    <span style="left:20%; animation-delay:2s;">❤</span>
+    <span style="left:35%; animation-delay:4s;">❤</span>
+    <span style="left:50%; animation-delay:1s;">❤</span>
+    <span style="left:65%; animation-delay:6s;">❤</span>
+    <span style="left:80%; animation-delay:3s;">❤</span>
+    <span style="left:90%; animation-delay:5s;">❤</span>
+  </div>
+
+  <div class="container">
+
+    <!-- Replace this image with your boyfriend's photo -->
+    <img src="C:\Users\Eliud's\Downloads\WhatsApp Image 2026-05-15 at 3.07.09 PM (1).jpeg"" class="photo" alt="Birthday Boy">
+
+    <h1>Happy Birthday Babe ❤️</h1>
+
+    <h2>To the most amazing person in my life</h2>
+
+    <div class="heart">❤</div>
+
+    <p>
+      Thank you for making my life brighter, happier, and full of love.
+      Every moment with you is special and I’m so grateful for you.
+      I hope this year brings you endless happiness, success, peace,
+      and everything your heart desires.
+    </p>
+
+    <button onclick="showMessage()">Click For Your Surprise 🎁</button>
+
+    <div class="hidden-message" id="message">
+      <p>
+        You are my safe place, my happiness, and one of the best things
+        that has ever happened to me. Watching you grow, smile, and chase
+        your dreams makes me so proud. I’ll always cheer for you.
+      </p>
+
+      <h2>I Love You So Much 💕</h2>
+    </div>
+</div>
+
+  <script>
+    function showMessage() {
+      document.getElementById('message').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
